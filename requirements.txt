@@ -1,0 +1,28 @@
+# Núcleo do RAG / scraping — faixas testadas em Python 3.12.
+# Para reprodutibilidade exata, use requirements.lock.txt (gerado por pip freeze).
+
+# Scraping
+cloudscraper>=1.2.71
+beautifulsoup4>=4.12,<5
+requests>=2.31
+
+# Pipeline / UX
+tqdm>=4.66
+
+# API
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29
+
+# LLM / embeddings (Ollama local)
+ollama>=0.3.0
+
+# Fallback de geração na nuvem (usado quando o Ollama local não existe)
+google-genai>=1.0
+
+# Vector store
+chromadb>=0.5.0
+
+# Modelos / config
+pydantic>=2.6,<3
+pydantic-settings>=2.2
+python-dotenv>=1.0

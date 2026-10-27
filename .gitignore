@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# IDE
+.vs/
+.idea/
+
+# Env / secrets
+.env
+.env.local
+*.env
+!.env.example
+
+# Logs
+*.log
+
+data/errors.log
+data/progress.json
+
+# Mod build artifacts (.NET)
+mod/**/bin/
+mod/**/obj/
+
+data/
